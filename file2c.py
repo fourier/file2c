@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+###########################################################
+# binary files to c converter
+# Copyright (c) Alexey Veretennikov 2013
+###########################################################
+
+
 from __future__ import with_statement
 from sys import argv,exit
 from os import path
@@ -50,4 +56,3 @@ else:
     print("%s is not a file" % argv[1])
   else:
     process_path(path.normpath(argv[1]))
-
