@@ -8,11 +8,11 @@ Usage:
 <pre>
 python file2c.py filename.ext
 </pre>
-- generates the file **filename_ext.c**
+generates the file **filename_ext.c**
 <pre>
 python files2c.py file1 [file2 file3...]
 </pre>
-- generates files **embedded_files.h** and **embedded_files.c**
+generates files **embedded_files.h** and **embedded_files.c**
 The **files2c.py** creates the lookup function:
 ```c
 int open_embedded_file(/*[in]*/const char *file_name, /*[out]*/size_t* size, /*[out]*/const char** contents_ptr);
