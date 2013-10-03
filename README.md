@@ -17,7 +17,7 @@ The **files2c.py** creates the lookup function:
 ```c
 int open_embedded_file(/*[in]*/const char *file_name, /*[out]*/size_t* size, /*[out]*/const char** contents_ptr);
 ```
-which can be used to get the pointer and the name of embedded file. See *example.c* for the usage example
+which can be used to get the pointer to the embedded file and its size by given the name of embedded file. See *example.c* for the usage example
 
 ----
 *Copyright (c) 2013 Alexey Veretennikov <alexey dot veretennikov at gmail dot com>*
