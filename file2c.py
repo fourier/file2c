@@ -29,6 +29,7 @@ def process_path(fname):
   print("Output to file %s" % output_fname)
   size = 0
   with open(output_fname, "wt+") as f:
+    f.write("#ifdef __ICCARM__\n#pragma data_alignment=8\n#endif\n")
     f.write("unsigned const char %s[] = {\n" % bytes_variable(fname))
     for bytes in read_file(fname):
       f.write("  ")
