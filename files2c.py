@@ -130,7 +130,7 @@ def create_source(file_list):
     
 if len(argv) < 2:
   print("Binary to C converter.")
-  print("(c) Alexey Veretennikov<alexey dot veretennikov at gmail dot com>, 2013"
+  print("(c) Alexey Veretennikov<alexey dot veretennikov at gmail dot com>, 2013")
   print("Syntax: %s file1 [file2 file3 ... file]" % argv[0])
   print("Generates the %s and %s in the current directory" % (EXPORT_HEADER_NAME, EXPORT_SOURCE_NAME))
 else:

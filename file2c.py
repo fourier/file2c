@@ -36,7 +36,7 @@ def process_path(fname):
   size = 0
   with open(output_fname, "wt+") as f:
     f.write("#ifdef __ICCARM__\n#pragma data_alignment=8\n#endif\n")
-    f.write("unsigned const char %s[] = {\n" % bytes_variable(fname))
+    f.write("const char %s[] = {\n" % bytes_variable(fname))
     for bytes in read_file(fname):
       f.write("  ")
       size = size + len(bytes)
@@ -46,7 +46,7 @@ def process_path(fname):
         f.write( ", ".join("0x%02x" % ord(i) for i in bytes))
       f.write("\n")
     f.write("};\n")
-    f.write("const unsigned int %s = %d;\n" % (size_variable(fname), size))
+    f.write("const int %s = %d;\n" % (size_variable(fname), size))
 
 if len(argv) < 2:
   print("Syntax: %s path" % argv[0])
