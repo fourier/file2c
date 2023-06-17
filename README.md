@@ -1,23 +1,11 @@
-File2C converter
-================
+# Give Up GitHub
 
-This simple tool converts a set of files to C source code, providing a lookup-function to get a pointer and a size. Similar tools are *xxd* and *bin2c*.
+This project has given up GitHub.  ([See Software Freedom Conservancy's *Give Up  GitHub* site for details](https://GiveUpGitHub.org).)
 
-Usage:
-------
-<pre>
-python file2c.py filename.ext
-</pre>
-generates the file **filename_ext.c**
-<pre>
-python files2c.py file1 [file2 file3...]
-</pre>
-generates files **embedded_files.h** and **embedded_files.c**
-The **files2c.py** creates the lookup function:
-```c
-int open_embedded_file(/*[in]*/const char *file_name, /*[out]*/size_t* size, /*[out]*/const char** contents_ptr);
-```
-which can be used to get the pointer to the embedded file and its size by given  name of the embedded file. See *example.c* for the usage example
+You can now find this project at [https://codeberg.org/fourier/file2c](https://codeberg.org/fourier/file2c) instead.
 
-----
-*Copyright (c) 2013 Alexey Veretennikov <alexey dot veretennikov at gmail dot com>*
+Any use of this project's code by GitHub Copilot, past or present, is done without our permission.  We do not consent to GitHub's use of this project's code in Copilot.
+
+Join us; you can [give up GitHub](https://GiveUpGitHub.org) too!
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
